@@ -1,3 +1,15 @@
+  // String Repeat
+  function repeatStr (n, s) {
+    let repeatStringArr = [];
+    
+    for(let i = 0; i < n; i++) {
+      repeatStringArr.push(s);
+    }
+    
+    return repeatStringArr.join('');
+  }
+  
+  
   // Remove First and Last Character
   function removeChar(str){
     let newString = str.substring(1).slice(0, -1);
