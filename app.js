@@ -1,3 +1,25 @@
+  // Fake Binary
+  function fakeBin(x){
+  let numberArray = [];
+  let secondNumArray = [];
+  let finalStringOutput;
+  
+  let splitString = x.split('');
+  let length = splitString.length;
+  
+  for(let i = 0; i < length; i++) {
+   numberArray.push(parseInt(splitString[i]))
+    let newNumArr = numberArray[i] < 5 === true ? 0 : 1;
+    secondNumArray.push(newNumArr)
+    
+    let secondNumArrToString = secondNumArray.toString();
+    let splitStringArr = secondNumArrToString.split(',');
+    let joinedArrOne = splitStringArr.join('');
+    finalStringOutput = joinedArrOne;
+  }
+  return finalStringOutput;
+}
+  
   // String Repeat
   function repeatStr (n, s) {
     let repeatStringArr = [];
