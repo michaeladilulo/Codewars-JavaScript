@@ -1,3 +1,9 @@
+  // Convert String to Upper Case
+  function makeUpperCase(str) {
+    let upperCaseString = str.toUpperCase();
+    return upperCaseString;
+  }
+  
   // Return smallest number in array
   class SmallestIntegerFinder {
     findSmallestInt(args) {
