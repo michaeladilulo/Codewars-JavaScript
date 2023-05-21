@@ -1,3 +1,12 @@
+  // Remove String spaces
+  function noSpace(x){
+    let splitString = x.split(' ');
+    let joinedString = splitString.join('')
+    let newString = joinedString.toString();
+    
+    return newString;
+  }
+  
   // Convert String to Upper Case
   function makeUpperCase(str) {
     let upperCaseString = str.toUpperCase();
