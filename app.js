@@ -1,3 +1,17 @@
+  // Convert number to reversed array of digits
+  function digitize(n) {
+    // convert to a string
+    let numToString = String(n);
+    // split the string of numbers into an array
+    let splitString = numToString.split('');
+    // create array with .from, run parseInt() on each and convert to integer
+    let newArray = Array.from(splitString, x => parseInt(x));
+    // reverse the array (this mutates the original array)
+    let reversedArray = newArray.reverse();
+    // return the array
+    return reversedArray;
+  }
+  
   // Return Negative
   function makeNegative(num) {
     if(num > 0) {
