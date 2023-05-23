@@ -1,3 +1,12 @@
+  // Return Negative
+  function makeNegative(num) {
+    if(num > 0) {
+      return num * -1;
+    } else {
+      return num * 1;
+    }
+  }
+  
   // Invert Values (This took forever)
   function invert(array) {
     let newArray = array.map(n => n * -1);
