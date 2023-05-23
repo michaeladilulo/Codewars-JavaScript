@@ -1,3 +1,9 @@
+  // Invert Values (This took forever)
+  function invert(array) {
+    let newArray = array.map(n => n * -1);
+    return newArray;
+ }
+  
   // Remove String spaces
   function noSpace(x){
     let splitString = x.split(' ');
