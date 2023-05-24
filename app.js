@@ -1,3 +1,19 @@
+  // Can't Sleep, Just Count Sheep
+  var countSheep = function (num){ 
+    let sheepString = '';
+    if(num === 0) {
+      return '';
+    } else {
+      let sheepCount = 0;
+      while(sheepCount < num) {
+        sheepCount++;
+        let newString = `${sheepCount} sheep...`
+        sheepString += newString;
+      }
+      return sheepString;
+    }
+  }
+  
   // Transportation on Vehicle
   function rentalCarCost(d) {
     if(d >= 7) {
