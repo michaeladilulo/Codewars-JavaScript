@@ -1,3 +1,17 @@
+  // Transportation on Vehicle
+  function rentalCarCost(d) {
+    if(d >= 7) {
+      let totalForRental = (d * 40) - 50;
+      return totalForRental;
+    } else if(d >=3 && d <= 6) {
+      let totalForRental = (d * 40) - 20;
+      return totalForRental;
+    } else {
+      let totalForRental = d * 40;
+      return totalForRental;
+    }
+  }
+  
   // How good are you really?
   function betterThanAverage(classPoints, yourPoints) {
     // adds yourPoints to the classPoints array
