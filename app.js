@@ -1,3 +1,21 @@
+  // How good are you really?
+  function betterThanAverage(classPoints, yourPoints) {
+    // adds yourPoints to the classPoints array
+    let concatPoints = classPoints.concat(yourPoints);
+    
+    // adds all values together from concatPoints to include 'yourPoints'
+    let totalAddedScores = concatPoints.reduce((total, accumulator) => total + accumulator);
+  
+    // divides by concatPoints.length (working with arrays) to find the average
+    let classAveragePoints = totalAddedScores / concatPoints.length;
+    
+    // returns true if my score is better, false if it is worse
+    let howGoodAmI = yourPoints > classAveragePoints === true ? true : false;
+    
+    // returns value
+    return howGoodAmI;
+  }
+  
   // Convert number to reversed array of digits
   function digitize(n) {
     // convert to a string
