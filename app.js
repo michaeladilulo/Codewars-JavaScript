@@ -1,3 +1,9 @@
+  // Beginner Series Clock #2
+  function past(h, m, s){
+    let milliseconds = (s * 1000) + (m * 60000) + (h * 3600000);
+    return milliseconds;
+  }
+  
   // Can't Sleep, Just Count Sheep
   var countSheep = function (num){ 
     let sheepString = '';
