@@ -1,3 +1,8 @@
+  // Opposite Number
+  function opposite(number) {
+    return number > 0 === true ? -Math.abs(number) : Math.abs(number);
+  }
+  
   // Beginner Series Clock #2
   function past(h, m, s){
     let milliseconds = (s * 1000) + (m * 60000) + (h * 3600000);
