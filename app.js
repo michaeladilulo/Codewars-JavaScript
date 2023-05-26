@@ -1,3 +1,8 @@
+  // Convert Boolean to String
+  function boolToWord( bool ){
+    return bool ? 'Yes' : 'No';
+  }
+  
   // Hello World Function
   function greet() {
     return 'hello world!'
