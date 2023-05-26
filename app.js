@@ -1,3 +1,8 @@
+  // Hello World Function
+  function greet() {
+    return 'hello world!'
+  }
+  
   // Two Word Abbreviation
   function abbrevName(fullName){
     let firstInitial = fullName.slice(0, 1);
