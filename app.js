@@ -1,3 +1,11 @@
+  // Two Word Abbreviation
+  function abbrevName(fullName){
+    let firstInitial = fullName.slice(0, 1);
+    let findSpaceInName = fullName.indexOf(' ') + 1;
+    let secondInitial = fullName.slice(findSpaceInName, findSpaceInName + 1);
+    return firstInitial.toUpperCase() + '.' + secondInitial.toUpperCase()
+  }
+  
   // Opposite Number
   function opposite(number) {
     return number > 0 === true ? -Math.abs(number) : Math.abs(number);
