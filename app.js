@@ -1,3 +1,8 @@
+  // Convert a string to a number
+  const stringToNumber = function(str){
+    return parseInt(str);
+   }
+  
   // Are you playing Banjo?
   function areYouPlayingBanjo(name) {
     let playingBanjo =  name[0] === 'r' || name[0] === 'R' ? `${name} plays banjo` : `${name} does not play banjo`
