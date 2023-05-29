@@ -1,3 +1,8 @@
+  // Returning Strings
+  function greet(name){
+    return `Hello, ${name} how are you doing today?`;
+  }
+  
   // Convert a string to a number
   const stringToNumber = function(str){
     return parseInt(str);
