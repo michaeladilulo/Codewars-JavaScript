@@ -1,3 +1,8 @@
+  // Beginner - List Without a Map
+  function maps(numInArrToDouble){
+    return numInArrToDouble.map(number => number * 2);
+    }
+  
   // Convert a number to a string
   function numberToString(num) {
     return num.toString();
