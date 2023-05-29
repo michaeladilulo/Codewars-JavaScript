@@ -1,3 +1,9 @@
+  // Friend or Foe
+  function friend(friends){
+    const myFriends = friends.filter(friend => friend.length === 4)
+    return myFriends
+  }
+  
   // Convert Boolean to String
   function boolToWord( bool ){
     return bool ? 'Yes' : 'No';
