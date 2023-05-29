@@ -1,3 +1,9 @@
+  // Are you playing Banjo?
+  function areYouPlayingBanjo(name) {
+    let playingBanjo =  name[0] === 'r' || name[0] === 'R' ? `${name} plays banjo` : `${name} does not play banjo`
+    return playingBanjo
+    }
+  
   // Friend or Foe
   function friend(friends){
     const myFriends = friends.filter(friend => friend.length === 4)
