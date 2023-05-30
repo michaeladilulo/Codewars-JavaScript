@@ -47,6 +47,10 @@
     let secondInitial = fullName.slice(findSpaceInName, findSpaceInName + 1);
     return firstInitial.toUpperCase() + '.' + secondInitial.toUpperCase()
   }
+
+  // Two Word Abbreviation refactor into one line of code
+  const getInitials = fullName.split(' ').map(initial => initial[0]).join('.').toUpperCase();
+  return getInitials
   
   // Opposite Number
   function opposite(number) {
