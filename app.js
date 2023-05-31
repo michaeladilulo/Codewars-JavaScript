@@ -1,3 +1,9 @@
+  // Regex Validate Pin Code
+  function validatePIN (pin) {
+    let pinValidation = /^([0-9]{4})$|(^[0-9]{6})$/;
+    return pinValidation.test(pin) === true ? true : false;
+ }
+  
   // Beginner - List Without a Map
   function maps(numInArrToDouble){
     return numInArrToDouble.map(number => number * 2);
