@@ -1,3 +1,10 @@
+  // Ones and Zeros (Bitwise Operator)
+  const binaryArrayToNumber = binaryArray => {
+    return binaryArray.reduce((accumulator, value) => {
+      return (accumulator << 1) | value;
+    });
+  };
+  
   // Regex Validate Pin Code
   function validatePIN (pin) {
     let pinValidation = /^([0-9]{4})$|(^[0-9]{6})$/;
