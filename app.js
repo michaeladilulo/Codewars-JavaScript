@@ -1,3 +1,18 @@
+  // Beginner Series #3 Sum of Numbers
+  function getSum(numberOne, numberTwo){
+    let arrayToStoreNumbers = [];
+    let storingOfIndexValuesBetween = [];
+    arrayToStoreNumbers.push(numberOne);
+    arrayToStoreNumbers.push(numberTwo);
+ 
+    let smallerOfTwoNumbers = Math.min(...arrayToStoreNumbers);
+    let biggerOfTwoNumbers = Math.max(...arrayToStoreNumbers);
+   for(let i = smallerOfTwoNumbers; i <= biggerOfTwoNumbers; i++) {
+     storingOfIndexValuesBetween.push(i)
+   }
+  return storingOfIndexValuesBetween.reduce((total, acc) => total + acc);
+}
+  
   // Ones and Zeros (Bitwise Operator)
   const binaryArrayToNumber = binaryArray => {
     return binaryArray.reduce((accumulator, value) => {
