@@ -1,3 +1,14 @@
+  // Counting Sheep
+  function countSheeps(arrayOfSheep) {
+    let count = 0;
+    for(let i = 0; i < arrayOfSheep.length; i++) {
+      if(arrayOfSheep[i] === true) {
+        count += 1;
+      }
+    }
+    return count;
+  }
+  
   // Reversed Words
   function reverseWords(str) {
     return str.split(' ').map(word => word).reverse().join().split('').reverse().join('').replaceAll(',', ' ')
