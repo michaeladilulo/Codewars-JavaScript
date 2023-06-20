@@ -1,3 +1,8 @@
+  // Reversed Strings
+  function solution(str){
+    return str.split('').reverse().join('');
+  }
+  
   // Beginner Series #3 Sum of Numbers
   function getSum(numberOne, numberTwo){
     let arrayToStoreNumbers = [];
