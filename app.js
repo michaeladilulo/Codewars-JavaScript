@@ -1,3 +1,12 @@
+  // School Paperwork
+  function paperwork(classmates, pagesOfHomework) {
+    if(classmates <= 0 || pagesOfHomework <= 0) {
+      return 0;
+    } else {
+      return classmates * pagesOfHomework;
+    }
+  }
+  
   // Counting Sheep
   function countSheeps(arrayOfSheep) {
     let count = 0;
