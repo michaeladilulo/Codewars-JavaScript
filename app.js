@@ -1,3 +1,8 @@
+  // Sums Array
+  function sum(numbersArray) {
+    return numbersArray.length > 0 ? numbersArray.reduce((total, accumulator) => total + accumulator) : 0
+};
+  
   //Sentence Smash
   function smash (words) {
     return words.toString().replaceAll(',', ' ')
