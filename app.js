@@ -1,3 +1,8 @@
+  // Even or Odd
+  function evenOrOdd(number) {
+    return number % 2 === 0 ? 'Even' : 'Odd';
+  }
+  
   // Average of Numbers Array
   function findAverage(numberArray) {
     if(numberArray.length === 0) {
