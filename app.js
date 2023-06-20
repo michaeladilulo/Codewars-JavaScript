@@ -1,3 +1,12 @@
+  // Average of Numbers Array
+  function findAverage(numberArray) {
+    if(numberArray.length === 0) {
+      return 0;
+    } else {
+      return numberArray.reduce((accumulator, totalValue) => (accumulator + totalValue)) / numberArray.length;
+      }
+    }
+  
   // School Paperwork
   function paperwork(classmates, pagesOfHomework) {
     if(classmates <= 0 || pagesOfHomework <= 0) {
