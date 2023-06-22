@@ -1,4 +1,26 @@
-  // Sums Array
+// Highest and Lowest
+function highAndLow(numbers){
+  let stringToNumbersArray = [];
+  let maxMinNumbers = [];
+  
+  let stringConvertToArrayOfNums = numbers.split(' ');
+  
+  for(let i = 0; i < stringConvertToArrayOfNums.length; i++) {
+    stringToNumbersArray.push(parseInt(stringConvertToArrayOfNums[i]))
+  }
+  
+  let arrayToFilterForNumbers = stringToNumbersArray.filter(el => el != NaN);  
+  
+  let maxNumberInArray = Math.max(...arrayToFilterForNumbers);
+  maxMinNumbers.push(maxNumberInArray);
+  
+  let minNumberInArray = Math.min(...arrayToFilterForNumbers);
+  maxMinNumbers.push(minNumberInArray)
+  
+  return maxMinNumbers.toString().replace(',', ' ');
+}
+
+// Sums Array
   function sum(numbersArray) {
     return numbersArray.length > 0 ? numbersArray.reduce((total, accumulator) => total + accumulator) : 0
 };
