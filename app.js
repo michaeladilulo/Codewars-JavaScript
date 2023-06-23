@@ -1,3 +1,8 @@
+// Training on Descending Order
+function descendingOrder(number){
+  return parseInt(number.toString().split('').sort().reverse().join(''))
+  }
+
 // Multiples of 3 and 5
 function solution(number){
   let singleNumToNumsArray = [];
