@@ -1,3 +1,16 @@
+// Multiples of 3 and 5
+function solution(number){
+  let singleNumToNumsArray = [];
+ 
+  for(let i = 0; i < number; i++) {
+    singleNumToNumsArray.push(i);
+  }
+ 
+  let multiplesOfThreeAndFive = singleNumToNumsArray.filter(num => num % 3 === 0 || num % 5 === 0);
+
+  return multiplesOfThreeAndFive.length > 0 ? multiplesOfThreeAndFive.reduce((total, acc) => total + acc) : 0;
+}
+
 // Highest and Lowest
 function highAndLow(numbers){
   let stringToNumbersArray = [];
