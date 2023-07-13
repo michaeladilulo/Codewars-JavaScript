@@ -1,3 +1,24 @@
+// Don't Give Me Five
+function dontGiveMeFive(start, end) {
+  let rangeToFullArray = [];
+  let isFiveIncluded;
+  let filteredArray = [];
+  let filteredElements = [];
+
+  for(let idx = start; idx <= end; idx++) {
+    rangeToFullArray.push(idx.toString());
+  }
+  const arrayEntries = rangeToFullArray.entries();
+
+  for(const element of arrayEntries) {
+    isFiveIncluded = element[1].includes('5');
+    filteredElements.push(isFiveIncluded)
+  }
+  filteredArray = filteredElements.filter(element => element != true)
+
+  return filteredArray.length;
+}
+
 // Permutations of a String: LEARNED
 function permutations(string) {
   // first a type check to make sure we are dealing with a proper var
